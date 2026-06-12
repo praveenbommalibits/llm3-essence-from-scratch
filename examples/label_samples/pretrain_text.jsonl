@@ -1,0 +1,3 @@
+{"text": "A transformer language model reads a sequence of tokens and learns to predict the next token."}
+{"text": "Attention lets each token compare itself with earlier tokens and blend useful context."}
+{"text": "Pretraining builds broad language ability before the model is tuned for instructions."}

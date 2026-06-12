@@ -1,0 +1,3 @@
+{"user": "Explain self-attention in two simple sentences.", "assistant": "Self-attention lets each token look at earlier tokens in the same sequence. The model uses those comparisons to decide which context matters for the next prediction."}
+{"user": "What does the loss mask do during SFT?", "assistant": "The loss mask marks assistant tokens as trainable targets and masks out user or role-marker tokens. This teaches the model to answer the prompt instead of learning to reproduce the whole prompt."}
+{"messages": [{"role": "user", "content": "Why keep an end-of-text token?"}, {"role": "assistant", "content": "The end-of-text token gives the model a clear signal that an answer or document segment is finished."}]}
