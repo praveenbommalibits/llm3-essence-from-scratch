@@ -10,6 +10,7 @@ not_in_nav: |
 # Keep the raw mermaid sources out of the built site.
 exclude_docs: |
   /diagrams/src/
+  /UPSTREAM_README.md
 
 theme:
   name: material
