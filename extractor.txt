@@ -1,0 +1,74 @@
+🛠️🧭 I went down the OCR + PDF extraction rabbit hole.
+
+If you are building RAG systems or AI Agents around real documents, you also have to deal with:
+
+tables, formulas, reading order, scanned pages, multi-column layouts, charts, headers and footnotes.
+
+So I went through the open-source ecosystem and pulled together the tools I would actually look at.
+
+Here are 20 OCR + PDF extractors worth knowing in 2026:
+
+》𝗡𝗮𝘁𝗶𝘃𝗲 𝗣𝗗𝗙 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗶𝗼𝗻
+
+✸ PyMuPDF4LLM → PDF to Markdown/JSON
+✸ pdfplumber → text, coordinates, tables
+✸ pypdf → lightweight PDF parsing
+
+→ Best starting point when the PDF already contains clean digital text.
+
+》𝗢𝗖𝗥 𝗘𝗻𝗴𝗶𝗻𝗲𝘀
+
+✸ Tesseract → classic OCR baseline
+✸ PaddleOCR → multilingual OCR + document AI
+✸ Surya → OCR + layout + reading order
+✸ EasyOCR → simple Python OCR
+✸ docTR → text detection + recognition
+
+》𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗣𝗮𝗿𝘀𝗲𝗿𝘀
+
+✸ Docling → PDFs, Office, tables, layout
+✸ MinerU → formulas, tables, reading order
+✸ Marker → PDF/image to Markdown, JSON, HTML
+✸ Unstructured → extraction + chunking
+
+》𝗩𝗟𝗠-𝗕𝗮𝘀𝗲𝗱 𝗣𝗮𝗿𝘀𝗶𝗻𝗴
+
+✸ olmOCR → VLM-based PDF extraction
+✸ OCRFlux → complex layouts + cross-page tables
+✸ MonkeyOCR → multimodal document parsing
+✸ dots.mocr → multilingual structured documents
+✸ Zerox → vision models to Markdown
+
+→ This is the category I find especially interesting.
+
+The model is not only recognizing characters anymore.
+
+It is also interpreting the document structure.
+
+》𝗦𝗽𝗲𝗰𝗶𝗮𝗹𝗶𝘀𝘁 𝗧𝗼𝗼𝗹𝘀
+
+✸ GROBID → scientific papers + metadata
+✸ Camelot → PDF tables
+✸ Nougat → equations + academic PDFs
+
+And this is the bigger shift:
+
+PDF
+→ Native text
+→ Layout
+→ OCR / VLM
+→ Tables + formulas
+→ Reading order
+→ Markdown / JSON
+→ Verification
+→ RAG / Agent context
+
+𝗣𝗹𝗲𝗮𝘀𝗲 𝗥𝗲𝗺𝗲𝗺𝗯𝗲𝗿:
+
+The best OCR model is not necessarily the best document pipeline.
+
+For Production AI Agents, the goal is not only to extract the words.
+
+It is to preserve enough structure and meaning for the agent to reason over the document correctly.
+
+I may benchmark Docling vs MinerU vs Marker vs olmOCR vs PaddleOCR vs OCRFlux next.
